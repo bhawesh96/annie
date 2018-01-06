@@ -10,5 +10,5 @@
 9. Add lots of padding at the footer 
 10. Place all images.
 
-Mockups in /docs
+Mockups reference at /mockup.jpg
 Resources in /resources
