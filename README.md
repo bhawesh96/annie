@@ -6,7 +6,7 @@
 5. [Done] Replace all background images
 6. Change fonts
 7. Transition Annie to hero image
-8. Reduce size of features images
+8. [DONE] Reduce size of features images
 9. Add lots of padding at footer elements
 10. Fix forms
 
