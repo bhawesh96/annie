@@ -797,7 +797,7 @@ button.large, .button.large {
 }
 
 button.stroke, .button.stroke {
-  background: transparent !important;
+  background: #235789 !important;
   border: 3px solid #313131;
   line-height: 4.8rem;
 }
@@ -1565,8 +1565,8 @@ header .header-logo a {
   margin: 4.8rem 0 0 0;
 }
 .home-content-tablecell .more .button {
-  border-color: black;
-  color: black;
+  border-color: #235789;
+  color: white;
 }
 
 /* home social-list */
@@ -2647,12 +2647,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   line-height: 6rem;
   padding: 0 3rem;
   width: 100%;
-  background: #f9a828;
-  color: #000000;
+  background: #235789;
+  color:white;
   margin-top: .6rem;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
-  background: #f89e0f;
+  background: #235789;
 }
 
 #message-warning, #message-success {
@@ -2801,11 +2801,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *
  * ------------------------------------------------------------------- */
 footer {
-  margin: 0 0 5.4rem 0;
   padding: 0;
   font-size: 1.5rem;
   color: black;
-  background-image: url(../resources/annies-trifecta.png);
 }
 footer a, footer a:visited {
   color: #FFFFFF;
@@ -2820,7 +2818,7 @@ footer h4.h05 {
   color: black;
   position: relative;
   padding-bottom: 4.2rem;
-  margin-bottom: 3.6rem;
+  /*margin-bottom: 0;*/
 }
 footer h4.h05::after {
   display: block;
@@ -2863,7 +2861,6 @@ footer h4.h05::after {
 .footer-main #mc-form input[type="email"] {
   height: 6rem;
   padding: 1.5rem 8rem 1.5rem 2rem;
-  margin-bottom: 1.5rem;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
 }
