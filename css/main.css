@@ -1886,7 +1886,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
 #services {
   background-color: white;
-  background-image: url(../resources/r2.png);
+  
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -2508,7 +2508,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
 #contact {
   background-color: white;
-  background-image: url(../resources/annies-trifecta.png);
+  background-image: url(../resources/r2.png);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -2805,6 +2805,7 @@ footer {
   padding: 0;
   font-size: 1.5rem;
   color: black;
+  background-image: url(../resources/annies-trifecta.png);
 }
 footer a, footer a:visited {
   color: #FFFFFF;
