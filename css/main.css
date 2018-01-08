@@ -1,9 +1,5 @@
 /* ===================================================================
  *
- *  Infinity v1.0 Main Stylesheet
- *  01-02-2017
- *  ------------------------------------------------------------------
- *
  *  TOC:
  *  01. webfonts and iconfonts
  *  02. base style overrides
@@ -491,7 +487,7 @@ td:last-child {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #0F1215;
+  background: #020100;
   z-index: 800;
   height: 100%;
   width: 100%;
@@ -510,7 +506,7 @@ td:last-child {
   margin-left: -30px;
   margin-top: -30px;
   padding: 0;
-  background-color: #f9a828;
+  background-color: #cc0000;
   border-radius: 100%;
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
   animation: sk-scaleout 1.0s infinite ease-in-out;
@@ -1505,7 +1501,8 @@ header .row {
  *  10. home - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
-#home {
+#home,
+#final {
   width: 100%;
   height: 100%;
   background-color: #ffff;
@@ -1519,18 +1516,18 @@ header .row {
   min-height: 804px;
   position: relative;
 }
-#home .overlay {
+#home .overlay
+#final .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   opacity: .2;
-  background-image: url('../resources/annie-main.png');
-  background-size: auto 84%;
-  background-position: center 64px;
-  background-repeat: no-repeat;
   background-color: white;
+}
+#home-product {
+  height:248px;
 }
 
 .home-content-table {
@@ -1548,7 +1545,7 @@ header .row {
 }
 .home-content-tablecell .row {
   position: relative;
-  padding-top: 16.2rem;
+  padding-top: 6rem;
   padding-bottom: 15rem;
 }
 .home-content-tablecell h3 {
@@ -1646,8 +1643,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   position: relative;
   top: 36px;
   right: 42px;
-  -webkit-animation: animate-it 3s ease infinite;
-  animation: animate-it 3s ease infinite;
+  -webkit-animation: animate-it 2s ease infinite;
+  animation: animate-it 2s ease infinite;
 }
 
 /* vertical animation */
@@ -1730,7 +1727,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 }
 @media only screen and (max-width: 600px) {
-  #home {
+  #home,
+  #final {
     min-height: 702px;
   }
 
@@ -1773,7 +1771,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 }
 @media only screen and (max-width: 400px) {
-  #home {
+  #home,
+  #final {
     min-height: 654px;
   }
 
@@ -1906,18 +1905,16 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *  12. services - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
-#services {
+#services,
+#uses {
   background-color: white;
-
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  min-height: 800px;
   position: relative;
-  padding: 15rem 0 15rem;
-  color: rgba(255, 255, 255, 0.3);
+  padding: 8rem 0 8rem;
 }
 #services .overlay {
   position: absolute;
@@ -1998,7 +1995,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 @media only screen and (max-width: 768px) {
   #services {
-    padding: 12rem 0 12rem;
+    padding: 8rem 0 0rem;
   }
   #services .services-content {
     max-width: 550px;
@@ -2540,7 +2537,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  padding: 12rem 0 12rem;
+  padding: 8rem 0 0rem;
   position: relative;
 }
 #contact .overlay {
@@ -2616,6 +2613,21 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background: #f9a828;
   border-radius: 3px;
 }
+#contact form .form-field.checker {
+  margin-bottom:3rem;
+}
+#contact form .form-field.checker input[type="checkbox"] {
+  margin:0;
+}
+#contact form .form-field.checker label {
+  position: static;
+  display: inline;
+  padding: 0;
+  background: transparent;
+  border-radius: 0px;
+  line-height: normal;
+  vertical-align: middle;
+}
 #contact form .form-field label::after {
   position: absolute;
   right: 15px;
@@ -2625,6 +2637,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   border-right: 5px solid transparent;
   border-bottom: 5px solid #f9a828;
   content: "";
+}
+#contact form .form-field.checker label::after {
+  display: none;
 }
 
 #contact input[type="text"],

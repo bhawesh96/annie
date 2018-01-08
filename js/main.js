@@ -1,8 +1,3 @@
-/* ===================================================================
- * Infinity - Main JS
- *
- * ------------------------------------------------------------------- */
-
 (function($) {
 
 	"use strict";
@@ -137,6 +132,8 @@
 	var ssMenuOnScrolldown = function() {
 
 		var menuTrigger = $('#header-menu-trigger');
+		var homeProduct = $('#home-product');
+		var homeInfo = $('#home-info');
 
 		$WIN.on('scroll', function() {
 
@@ -280,17 +277,17 @@
 	     	if (!$("html").hasClass('no-cssanimations')) {
 	     		setTimeout(function(){
 	    			$('.animate-intro').each(function(ctr) {
-						var el = $(this),
+							var el = $(this),
 	                   animationEfx = el.data('animate') || null;
 
-	               if (!animationEfx) {
-	                 	animationEfx = cfg.defAnimation;
-	               }
+               if (!animationEfx) {
+                 	animationEfx = cfg.defAnimation;
+               }
 
-	              	setTimeout( function () {
-							el.addClass(animationEfx + ' animated');
-						}, ctr * 300);
-					});
+		          setTimeout( function () {
+								el.addClass(animationEfx + ' animated');
+							}, ctr * 300);
+						});
 				}, 100);
 	     	}
 		});
@@ -298,7 +295,7 @@
 	};
 
 
-  /* Contact Form
+  /* Contact Form BOOKMARK 1
    * ------------------------------------------------------ */
    var ssContactForm = function() {
 
