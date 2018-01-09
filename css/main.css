@@ -67,6 +67,9 @@ body {
   margin: 0;
   padding: 0;
 }
+* {
+  font-family: "montserrat-regular", sans-serif;
+}
 
 /* -------------------------------------------------------------------
  * links - (_document-setup)
@@ -1792,114 +1795,6 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 
-/* ===================================================================
- *  11. about - (_layout.scss)
- *
- * ------------------------------------------------------------------- */
-#about {
-  position: relative;
-  padding: 4.2rem 0 12rem;
-  background-color: #FFFFFF;
-  min-height: 696px;
-  text-align: center;
-}
-#about .about-wrap {
-  max-width: 850px;
-}
-#about span {
-  color: #07617d;
-}
-#about h3 {
-  font-family: "montserrat-bold", sans-serif;
-  font-size: 1.8rem;
-  line-height: 1.667;
-  color: #07617d;
-  text-transform: uppercase;
-  letter-spacing: .3rem;
-  position: relative;
-}
-#about h3::before {
-  display: block;
-  content: "";
-  width: 3px;
-  height: 9.6rem;
-  background-color: rgba(149, 149, 149, 0.7);
-  margin: 0 auto 2.4rem;
-}
-#about .lead {
-  font-family: "librebaskerville-bold", serif;
-  font-size: 4rem;
-  line-height: 1.8;
-  color: #2e383f;
-  margin-top: 6rem;
-}
-
-/* -------------------------------------------------------------------
- * responsive:
- * about
- * ------------------------------------------------------------------- */
-@media only screen and (max-width: 1024px) {
-  #about {
-    min-height: 636px;
-  }
-  #about .about-wrap {
-    max-width: 800px;
-  }
-  #about .lead {
-    font-size: 3.8rem;
-  }
-}
-@media only screen and (max-width: 900px) {
-  #about .about-wrap {
-    max-width: 720px;
-  }
-  #about .lead {
-    font-size: 3.6rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  #about h3 {
-    font-size: 1.7rem;
-  }
-  #about .about-wrap {
-    max-width: 600px;
-  }
-  #about .lead {
-    font-size: 3.1rem;
-  }
-}
-@media only screen and (max-width: 600px) {
-  #about {
-    min-height: auto;
-  }
-  #about .about-wrap {
-    max-width: 500px;
-  }
-  #about .lead {
-    margin-top: 4.8rem;
-    font-size: 2.8rem;
-  }
-}
-@media only screen and (max-width: 500px) {
-  #about h3 {
-    font-size: 1.5rem;
-  }
-  #about .lead {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (max-width: 400px) {
-  #about {
-    padding: 4.2rem 0 9.6rem;
-  }
-  #about .about-wrap {
-    max-width: 380px;
-  }
-  #about .lead {
-    font-size: 2.3rem;
-  }
-}
-
 
 /* ===================================================================
  *  12. services - (_layout.scss)
@@ -1916,7 +1811,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   position: relative;
   padding: 8rem 0 8rem;
 }
-#services .overlay {
+#services .overlay,
+#uses .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1924,7 +1820,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   height: 100%;
   background-color: rgba(255, 255, 255, 0.7);
 }
-#services .gradient-overlay {
+#services .gradient-overlay,
+#uses .gradient-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1936,46 +1833,65 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, transparent 100%); */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#00000000',GradientType=0 );
 }
-#services .section-intro h3 {
+#services .section-intro h3,
+#uses .section-intro h3 {
   color: rgba(242, 242, 242, 0.5);
 }
-#services .section-intro h1 {
+#services .section-intro h1,
+#uses .section-intro h1 {
   color: black;
 }
-#services .section-intro .lead {
+#services .section-intro .lead,
+#uses .section-intro .lead {
   color: rgba(242, 242, 242, 0.4);
 }
-#services .services-content {
+#services .services-content,
+#uses .services-content {
+  margin-bottom: 3rem;
   text-align: center;
   max-width: 1040px;
 }
-#services .services-list {
+#services .services-content p,
+#uses .services-content p {
+  margin-bottom: 8rem;
+}
+#services .services-list,
+#uses .services-list {
   margin-top: 1.2rem;
   text-align: center;
 }
-#services .services-list .service-item {
-  margin-bottom: 3rem;
+#services .services-list .service-item,
+#uses .services-list .service-item {
   padding: 0 50px;
 }
-#services .services-list .service-item p {
-  color: black;
-  margin-bottom:8rem;
+#uses .services-list .service-item h1 {
+  margin: 6rem 0;
 }
-#services .services-list .icon {
+#services .services-list .service-item p,
+#uses .services-list .service-item p {
+  color: black;
+  margin-bottom: 8rem;
+}
+#uses .services-list .service-item .service-content:last-child p {
+  margin-bottom: 0;
+}
+#services .services-list .icon,
+#uses .services-list .icon {
   display: inline-block;
   margin-bottom: 1.5rem;
 }
-#services .services-list .icon i {
+#services .services-list .icon i,
+#uses .services-list .icon i {
   font-size: 5.4rem;
   color: #f9a828;
 }
-#services .services-list .h05 {
+#services .services-list .h05,
+#uses .services-list .h05 {
   font-size: 1.7rem;
   line-height: 1.765;
   color: black;
 }
-#services-listing .service-item img
-{
+#services-listing .service-item img {
   width:50%;
 }
 
@@ -2523,6 +2439,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #clients .owl-carousel .owl-dots .owl-dot:hover span {
   background-color: #000000;
 }
+#clients h2 {
+  text-align: center;
+  font-family: "librebaskerville-bold", serif;
+}
 
 
 /* ===================================================================
@@ -2684,7 +2604,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background: #235789;
 }
 
-#message-warning, #message-success {
+.message-warning, .message-success {
   display: none;
   background: #000000;
   padding: 3rem;
@@ -2692,21 +2612,21 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   width: 100%;
 }
 
-#message-warning {
+.message-warning {
   color: #D32B2E;
 }
 
-#message-success {
+.message-success {
   color: #f9a828;
 }
 
-#message-warning i,
-#message-success i {
+.message-warning i,
+.message-success i {
   margin-right: 10px;
 }
 
 /* form loader */
-#submit-loader {
+.submit-loader {
   display: none;
   position: relative;
   left: 0;
@@ -2715,7 +2635,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   text-align: center;
   margin-bottom: 4.2rem;
 }
-#submit-loader .text-loader {
+.submit-loader .text-loader {
   display: none;
   font-family: "montserrat-bold", sans-serif;
   font-size: 1.4rem;
@@ -2724,10 +2644,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   text-transform: uppercase;
 }
 
-.oldie #submit-loader .s-loader {
+.oldie .submit-loader .s-loader {
   display: none;
 }
-.oldie #submit-loader .text-loader {
+.oldie .submit-loader .text-loader {
   display: block;
 }
 
