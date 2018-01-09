@@ -1919,7 +1919,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   position: relative;
   padding: 8rem 0 8rem;
 }
-#services .overlay {
+#services .overlay,
+#uses .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1927,7 +1928,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   height: 100%;
   background-color: rgba(255, 255, 255, 0.7);
 }
-#services .gradient-overlay {
+#services .gradient-overlay,
+#uses .gradient-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1939,46 +1941,65 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, transparent 100%); */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#00000000',GradientType=0 );
 }
-#services .section-intro h3 {
+#services .section-intro h3,
+#uses .section-intro h3 {
   color: rgba(242, 242, 242, 0.5);
 }
-#services .section-intro h1 {
+#services .section-intro h1,
+#uses .section-intro h1 {
   color: black;
 }
-#services .section-intro .lead {
+#services .section-intro .lead,
+#uses .section-intro .lead {
   color: rgba(242, 242, 242, 0.4);
 }
-#services .services-content {
+#services .services-content,
+#uses .services-content {
+  margin-bottom: 3rem;
   text-align: center;
   max-width: 1040px;
 }
-#services .services-list {
+#services .services-content p,
+#uses .services-content p {
+  margin-bottom: 8rem;
+}
+#services .services-list,
+#uses .services-list {
   margin-top: 1.2rem;
   text-align: center;
 }
-#services .services-list .service-item {
-  margin-bottom: 3rem;
+#services .services-list .service-item,
+#uses .services-list .service-item {
   padding: 0 50px;
 }
-#services .services-list .service-item p {
-  color: black;
-  margin-bottom:8rem;
+#uses .services-list .service-item h1 {
+  margin: 6rem 0;
 }
-#services .services-list .icon {
+#services .services-list .service-item p,
+#uses .services-list .service-item p {
+  color: black;
+  margin-bottom: 8rem;
+}
+#uses .services-list .service-item .service-content:last-child p {
+  margin-bottom: 0;
+}
+#services .services-list .icon,
+#uses .services-list .icon {
   display: inline-block;
   margin-bottom: 1.5rem;
 }
-#services .services-list .icon i {
+#services .services-list .icon i,
+#uses .services-list .icon i {
   font-size: 5.4rem;
   color: #f9a828;
 }
-#services .services-list .h05 {
+#services .services-list .h05,
+#uses .services-list .h05 {
   font-size: 1.7rem;
   line-height: 1.765;
   color: black;
 }
-#services-listing .service-item img
-{
+#services-listing .service-item img {
   width:50%;
 }
 
