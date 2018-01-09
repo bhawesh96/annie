@@ -4,8 +4,8 @@
 3. [Done] Change all background colour to white
 4. [Done] Accent colour to dark red
 5. [Done] Replace all background images
-6. Change fonts
-7. [DONE?] Transition Annie to hero image
+6. [DONE] Change fonts
+7. [DONE] Transition Annie to hero image
 8. [DONE] Reduce size of features images
 9. Annie Triangle inline img
 10. Fix forms
@@ -13,3 +13,31 @@
 
 Mockups reference at /mockup.jpg
 Resources in /resources
+
+
+---
+
+# Form data
+
+## When sent from "Schools and Organizations Section"
+```
+contactFrom:schoolsandorganizations
+contactName
+contactLocation
+contactEmail
+contactNoA
+contactCheck
+```
+
+## When sent from "Individuals"
+```
+contactFrom:individuals
+contactName
+contactEmail
+contactPhone
+contactBuyFor
+contactCheck
+```
+
+## Change url to send to in:
+`main.js -> cfg object` 

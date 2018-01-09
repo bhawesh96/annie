@@ -366,41 +366,43 @@
    			<h5>Individuals</h5>
 
             <!-- form -->
-            <form name="contactForm" id="contactForm" method="post">
+            <form name="contactForm" id="contactForm_i" method="post">
+
+              <input name="contactFrom" type="hidden" value="individuals"/>
 
                <div class="form-field">
- 					   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required/>
+ 					   <input name="contactName" type="text" id="contactName_i" placeholder="Name" value="" minlength="2" required/>
                </div>
 
                <div class="row">
 					<div class="col-six tab-full">
 						<div class="form-field">
-							<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required/>
+							<input name="contactEmail" type="email" id="contactEmail_i" placeholder="Email" value="" required/>
 						</div>
 				   </div>
 				   <div class="col-six tab-full">
 					   <div class="form-field">
-						   <input name="contactSubject" type="text" id="contactSubject" placeholder="Phone" value="" required/>
+						   <input name="contactPhone" type="text" id="contactPhone_i" placeholder="Phone" value="" required/>
 					 </div>
 				   </div>
                 </div>
 
                <div class="form-field">
-	              <select name="contactBuyFor" id="contactBuyFor" required>
+	              <select name="contactBuyFor" id="contactBuyFor_i" required>
                   <option value="" disabled selected>Who would you like to buy an Annie for?</option>
                   <!-- TODO ANNIE OPTIONS -->
                 </select>
 	            </div>
 
               <div class="checker form-field">
-                <input name="contactCheck" type="checkbox" id="contactCheck"/>
+                <input name="contactCheck" type="checkbox" id="contactCheck_i"/>
                 <label for="contactCheck">I would benefit from an external partner sponsoring the device.</label>
               </div>
 
                <div class="form-field">
                   <button class="submitform">Individual Sign up</button>
 
-                  <div id="submit-loader">
+                  <div id="submit-loader_i" class="submit-loader">
                      <div class="text-loader">Sending...</div>
        			      <div class="s-loader">
 							  	<div class="bounce1"></div>
@@ -413,10 +415,10 @@
       		</form> <!-- end form -->
 
             <!-- contact-warning -->
-            <div id="message-warning"></div>
+            <div id="message-warning_i" class="message-warning"></div>
 
             <!-- contact-success -->
-      		<div id="message-success">
+      		<div id="message-success_i" class="message-success">
                <i class="fa fa-check"></i>Your message was sent, thank you!<br>
       		</div>
 
@@ -427,38 +429,40 @@
          	<h5>Schools and Organizations</h5>
 
          	            <!-- form -->
-						 <form name="contactForm" id="contactForm" method="post">
+						 <form name="contactForm" id="contactForm_s" method="post">
+
+               <input name="contactFrom" type="hidden" value="schoolsandorganizations"/>
 
 								<div class="form-field">
-										 <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required/>
+										 <input name="contactName" type="text" id="contactName_s" placeholder="Name" value="" minlength="2" required/>
 								</div>
 
 								<div class="row">
 										<div class="col-six tab-full">
 											<div class="form-field">
-												<input name="contactLocation" type="text" id="contactLocation" placeholder="Location" value="" required/>
+												<input name="contactLocation" type="text" id="contactLocation_s" placeholder="Location" value="" required/>
 											</div>
 									   </div>
 									   <div class="col-six tab-full">
 										   <div class="form-field">
-                         <input name="contactEmail" type="text" id="contactEmail" placeholder="Email" value="" required/>
+                         <input name="contactEmail" type="text" id="contactEmail_s" placeholder="Email" value="" required/>
 										 </div>
 									   </div>
 									</div>
 
 								<div class="form-field">
-								   <input name="contactNoA" type="number" id="contactNoA" placeholder="Number of Annies" required/>
+								   <input name="contactNoA" type="number" id="contactNoA_s" placeholder="Number of Annies" required/>
 								 </div>
 
                  <div class="checker form-field">
-                   <input name="contactCheck" type="checkbox" id="contactCheck"/>
+                   <input name="contactCheck" type="checkbox" id="contactCheck_s"/>
                    <label for="contactCheck">I would benefit from an external partner sponsoring the device.</label>
                  </div>
 
 								<div class="form-field">
 								   <button class="submitform">Organisation Sign up</button>
 
-								   <div id="submit-loader">
+								   <div id="submit-loader_s" class="submit-loader">
 									  <div class="text-loader">Sending...</div>
 										  <div class="s-loader">
 												   <div class="bounce1"></div>
@@ -471,10 +475,10 @@
 							   </form> <!-- end form -->
 
 							 <!-- contact-warning -->
-							 <div id="message-warning"></div>
+							 <div id="message-warning_s" class="message-warning"></div>
 
 							 <!-- contact-success -->
-							   <div id="message-success">
+							   <div id="message-success_s" class="message-success">
 								<i class="fa fa-check"></i>Your message was sent, thank you!<br>
 							   </div>
 

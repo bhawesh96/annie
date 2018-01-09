@@ -5,7 +5,7 @@
 	var cfg = {
 		defAnimation   : "fadeInUp",    // default css animation
 		scrollDuration : 800,           // smoothscroll duration
-		mailChimpURL   : 'http://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e65110b38d' // TODO tochange
+		sendURL: "inc/send.php"					// email to send contact form data to.
 	},
 
 	$WIN = $(window);
@@ -299,16 +299,16 @@
    * ------------------------------------------------------ */
    var ssContactForm = function() {
 
-   	/* local validation */
-		$('#contactForm').validate({
+   	/* local validation for i */
+		$('#contactForm_i').validate({
 
 			/* submit via ajax */
 			submitHandler: function(form) {
-				var sLoader = $('#submit-loader');
+				var sLoader = $('#submit-loader_i');
 
 				$.ajax({
 			      type: "POST",
-			      url: "inc/sendEmail.php",
+			      url: cfg.sendURL,
 			      data: $(form).serialize(),
 
 			      beforeSend: function() {
@@ -318,60 +318,66 @@
 		            // Message was sent
 		            if (msg == 'OK') {
 		            	sLoader.fadeOut();
-		               $('#message-warning').hide();
-		               $('#contactForm').fadeOut();
-		               $('#message-success').fadeIn();
+		               $('#message-warning_i').hide();
+		               $('#contactForm_i').fadeOut();
+		               $('#message-success_i').fadeIn();
 		            }
 		            // There was an error
 		            else {
 		            	sLoader.fadeOut();
-		               $('#message-warning').html(msg);
-			            $('#message-warning').fadeIn();
+		               $('#message-warning_i').html(msg);
+			            $('#message-warning_i').fadeIn();
 		            }
 			      },
 			      error: function() {
 			      	sLoader.fadeOut();
-			      	$('#message-warning').html("Something went wrong. Please try again.");
-			         $('#message-warning').fadeIn();
+			      	$('#message-warning_i').html("Something went wrong. Please try again.");
+			         $('#message-warning_i').fadeIn();
 			      }
 		      });
 	  		}
 
 		});
-   };
 
+		/* local validation for s */
+		$('#contactForm_s').validate({
 
-  /* AjaxChimp
-	* ------------------------------------------------------ */
-	var ssAjaxChimp = function() {
+			/* submit via ajax */
+			submitHandler: function(form) {
+				var sLoader = $('#submit-loader_s');
 
-		$('#mc-form').ajaxChimp({
-			language: 'es',
-		   url: cfg.mailChimpURL
+				$.ajax({
+			      type: "POST",
+			      url: cfg.sendURL,
+			      data: $(form).serialize(),
+
+			      beforeSend: function() {
+			      	sLoader.fadeIn();
+			      },
+			      success: function(msg) {
+		            // Message was sent
+		            if (msg == 'OK') {
+		            	sLoader.fadeOut();
+		               $('#message-warning_s').hide();
+		               $('#contactForm_s').fadeOut();
+		               $('#message-success_s').fadeIn();
+		            }
+		            // There was an error
+		            else {
+		            	sLoader.fadeOut();
+		               $('#message-warning_s').html(msg);
+			            $('#message-warning_s').fadeIn();
+		            }
+			      },
+			      error: function() {
+			      	sLoader.fadeOut();
+			      	$('#message-warning_s').html("Something went wrong. Please try again.");
+			         $('#message-warning_s').fadeIn();
+			      }
+		      });
+	  		}
 		});
-
-		// Mailchimp translation
-		//
-		//  Defaults:
-		//	 'submit': 'Submitting...',
-		//  0: 'We have sent you a confirmation email',
-		//  1: 'Please enter a value',
-		//  2: 'An email address must contain a single @',
-		//  3: 'The domain portion of the email address is invalid (the portion after the @: )',
-		//  4: 'The username portion of the email address is invalid (the portion before the @: )',
-		//  5: 'This email address looks fake or invalid. Please enter a real email address'
-
-		$.ajaxChimp.translations.es = {
-		  'submit': 'Submitting...',
-		  0: '<i class="fa fa-check"></i> We have sent you a confirmation email',
-		  1: '<i class="fa fa-warning"></i> You must enter a valid e-mail address.',
-		  2: '<i class="fa fa-warning"></i> E-mail address is not valid.',
-		  3: '<i class="fa fa-warning"></i> E-mail address is not valid.',
-		  4: '<i class="fa fa-warning"></i> E-mail address is not valid.',
-		  5: '<i class="fa fa-warning"></i> E-mail address is not valid.'
-		}
-
-	};
+   };
 
 
   /* Back to Top
@@ -414,7 +420,6 @@
 		ssAnimations();
 		ssIntroAnimation();
 		ssContactForm();
-		ssAjaxChimp();
 		ssBackToTop();
 
 	})();
