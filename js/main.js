@@ -121,7 +121,8 @@
 	            items:6
 	         }
 	    	},
-				autoplay: true
+				autoplay: true,
+				autoplayTimeout:1400
 		});
 
 	};
