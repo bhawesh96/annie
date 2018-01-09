@@ -101,7 +101,7 @@
 
 		$(".owl-carousel").owlCarousel({
 	      nav: false,
-			loop: true,
+				loop: true,
 	    	margin: 50,
 	    	responsiveClass:true,
 	    	responsive: {
@@ -120,7 +120,8 @@
 	         1000:{
 	            items:6
 	         }
-	    	}
+	    	},
+				autoplay: true
 		});
 
 	};
