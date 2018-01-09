@@ -300,6 +300,23 @@
    * ------------------------------------------------------ */
    var ssContactForm = function() {
 
+		 /* defualt turn schools and organizations hidden */
+		 $('#contactForm_s').hide();
+
+		 /* form switcher */
+		 $('#contactForm').on('change', function () {
+			 switch (this.value) {
+				case "individuals":
+				 	$('#contactForm_i').show();
+					$('#contactForm_s').hide();
+					break;
+				case "schoolsandorganizations":
+					$('#contactForm_i').hide();
+					$('#contactForm_s').show();
+					break;
+			 }
+		 });
+
    	/* local validation for i */
 		$('#contactForm_i').validate({
 

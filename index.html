@@ -363,12 +363,15 @@
 
    		<div class="col-twelve tab-full animate-this">
 
-   			<h5>Individuals</h5>
+              <select id="contactForm" required>
+                <option value="individuals">Individuals</option>
+                <option value="schoolsandorganizations">Schools and Organizations</option>
+              </select>
 
             <!-- form -->
             <form name="contactForm" id="contactForm_i" method="post">
 
-              <input name="contactFrom" type="hidden" value="individuals"/>
+              <input name="contactFrom" type="hidden" value="schoolsandorganizations"/>
 
                <div class="form-field">
  					   <input name="contactName" type="text" id="contactName_i" placeholder="Name" value="" minlength="2" required/>
@@ -396,7 +399,7 @@
 
               <div class="checker form-field">
                 <input name="contactCheck" type="checkbox" id="contactCheck_i"/>
-                <label for="contactCheck">I would benefit from an external partner sponsoring the device.</label>
+                <label for="contactCheck_i">I would benefit from an external partner sponsoring the device.</label>
               </div>
 
                <div class="form-field">
@@ -423,12 +426,10 @@
       		</div>
 
          </div> <!-- end col-seven -->
-<!--
-         <div class="col-six tab-full contact-info end animate-this">
 
-         	<h5>Schools and Organizations</h5>
+         <div class="col-twelve tab-full contact-info end animate-this">
 
-         	            <!-- form 
+         	            <!-- form-->
 						 <form name="contactForm" id="contactForm_s" method="post">
 
                <input name="contactFrom" type="hidden" value="schoolsandorganizations"/>
@@ -456,7 +457,7 @@
 
                  <div class="checker form-field">
                    <input name="contactCheck" type="checkbox" id="contactCheck_s"/>
-                   <label for="contactCheck">I would benefit from an external partner sponsoring the device.</label>
+                   <label for="contactCheck_s">I would benefit from an external partner sponsoring the device.</label>
                  </div>
 
 								<div class="form-field">
@@ -472,16 +473,15 @@
 										 </div>
 								</div>
 
-							   </form> <!-- end form
+              </form> <!-- end form-->
 
-							 <!-- contact-warning
+							 <!-- contact-warning-->
 							 <div id="message-warning_s" class="message-warning"></div>
 
-							 <!-- contact-success
+							 <!-- contact-success-->
 							   <div id="message-success_s" class="message-success">
 								<i class="fa fa-check"></i>Your message was sent, thank you!<br>
 							   </div>
-							-->
 
 
    	</div> <!-- end row contact-content -->
