@@ -1401,7 +1401,7 @@ header .row {
   border-top: 1px dotted rgba(255, 255, 255, 0.03);
 }
 #menu-nav-wrap .nav-list li a {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.35);
   display: block;
 }
 #menu-nav-wrap .nav-list li a:hover,
@@ -1420,7 +1420,7 @@ header .row {
   display: inline-block;
 }
 #menu-nav-wrap .header-social-list li a {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.35);
 }
 #menu-nav-wrap .header-social-list li a:hover,
 #menu-nav-wrap .header-social-list li a:focus {
