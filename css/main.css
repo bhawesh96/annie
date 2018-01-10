@@ -762,6 +762,7 @@ input[type="button"] {
   text-align: center;
   white-space: nowrap;
   border: none;
+  border-radius: 50px;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
