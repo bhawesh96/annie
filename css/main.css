@@ -1532,7 +1532,13 @@ header .row {
 #home-product {
   height:248px;
 }
-
+#home_smscreen {
+  display: none;
+}
+#home-product2 {
+  width: 80%;
+  margin-left: 40%;
+}
 .home-content-table {
   width: 100%;
   height: 100%;
@@ -1698,6 +1704,14 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
   #home-logo {
     height:4rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #home_smscreen {
+    display: table;
+  }
+  #home_lgscreen {
+    display: none;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1907,6 +1921,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 @media only screen and (max-width: 900px) {
   #services .services-list .service-item {
     padding: 0 30px;
+  }
+  #uses .services-list .service-item:first-child .service-content:last-child p {
+    margin-bottom: 8rem;
   }
 }
 @media only screen and (max-width: 768px) {
