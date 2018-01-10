@@ -1,0 +1,22 @@
+{
+  "name": "annie",
+  "version": "1.0.0",
+  "description": "Model website live at sedate-zinc.surge.sh\r # Form data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidharthramesh/annie.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sidharthramesh/annie/issues"
+  },
+  "homepage": "https://github.com/sidharthramesh/annie#readme",
+  "devDependencies": {
+    "surge": "^0.19.0"
+  }
+}
