@@ -1579,6 +1579,7 @@ header .row {
   margin: 4.8rem 0 0 0;
 }
 .home-content-tablecell .more .button {
+  display: block;
   border-color: #235789;
   color: white;
 }
