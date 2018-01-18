@@ -60,7 +60,9 @@ html, body {
 
 body {
   background: white;
-  font-family: "librebaskerville-regular", serif;
+  /*font-family: "librebaskerville-regular", serif;*/
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: bold;
   font-size: 1.6rem;
   line-height: 3rem;
   color: #353535;
@@ -91,7 +93,7 @@ a:hover, a:focus {
  * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6,
 .h01, .h02, .h03, .h04, .h05, .h06 {
-  font-family: "montserrat-bold", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #151515;
   font-style: normal;
   text-rendering: optimizeLegibility;
@@ -136,7 +138,6 @@ h4, .h04 {
 h5, .h05 {
   font-size: 1.4rem;
   line-height: 1.7;
-  text-transform: uppercase;
   letter-spacing: .2rem;
 }
 
@@ -305,6 +306,7 @@ li {
 
 ol, ul {
   margin-left: 1.7rem;
+  text-align: left;
 }
 
 ul li {
@@ -506,7 +508,7 @@ td:last-child {
   margin-left: -30px;
   margin-top: -30px;
   padding: 0;
-  background-color: #cc0000;
+  background-color: #a90000;
   border-radius: 100%;
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
   animation: sk-scaleout 1.0s infinite ease-in-out;
@@ -759,6 +761,7 @@ input[type="button"] {
   text-align: center;
   white-space: nowrap;
   border: none;
+  border-radius: 50px;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -824,7 +827,7 @@ button.large, .button.large {
 }
 
 button.stroke, .button.stroke {
-  background: #235789 !important;
+  background: #011538 !important;
   border: 3px solid #313131;
   line-height: 4.8rem;
 }
@@ -1161,13 +1164,12 @@ input::-moz-focus-inner {
   margin-bottom: 1.5rem;
 }
 .section-intro h1 {
-  font-family: "librebaskerville-bold", serif;
+  font-family: "Lato", sans-serif;
   font-size: 4.8rem;
   line-height: 1.375;
-  color: #151515;
 }
 .section-intro h3 {
-  font-family: "montserrat-bold", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.8 rem;
   line-height: 1.667;
   color: rgba(242, 242, 242, 0.5);
@@ -1283,7 +1285,7 @@ header .row {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
-  color: white;
+  color: #EDA92E;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1292,14 +1294,14 @@ header .row {
   visibility:hidden;
 }
 #header-menu-trigger.opaque {
-  background-color: #000000;
+  background-color: transparent;
   visibility: visible;
 }
 #header-menu-trigger.opaque .header-menu-text {
-  background-color: #000000;
+  background-color: transparent;
 }
 #header-menu-trigger:hover, #header-menu-trigger:focus {
-  color: #FFFFFF;
+  color: #EDA92E;
 }
 #header-menu-trigger .header-menu-text {
   display: block;
@@ -1319,7 +1321,7 @@ header .row {
   display: block;
   height: 3px;
   width: 24px;
-  background-color: #FFFFFF;
+  background-color: #EDA92E;
   position: absolute;
   top: 50%;
   right: 9px;
@@ -1330,7 +1332,7 @@ header .row {
   content: '';
   width: 100%;
   height: 100%;
-  background-color: inherit;
+  background-color: #EDA92E;
   position: absolute;
   left: 0;
 }
@@ -1398,7 +1400,7 @@ header .row {
   border-top: 1px dotted rgba(255, 255, 255, 0.03);
 }
 #menu-nav-wrap .nav-list li a {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.35);
   display: block;
 }
 #menu-nav-wrap .nav-list li a:hover,
@@ -1417,7 +1419,7 @@ header .row {
   display: inline-block;
 }
 #menu-nav-wrap .header-social-list li a {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.35);
 }
 #menu-nav-wrap .header-social-list li a:hover,
 #menu-nav-wrap .header-social-list li a:focus {
@@ -1529,7 +1531,13 @@ header .row {
 #home-product {
   height:248px;
 }
-
+#home_smscreen {
+  display: none;
+}
+#home-product2 {
+  width: 80%;
+  margin-left: 40%;
+}
 .home-content-table {
   width: 100%;
   height: 100%;
@@ -1546,30 +1554,31 @@ header .row {
 .home-content-tablecell .row {
   position: relative;
   padding-top: 6rem;
-  padding-bottom: 15rem;
 }
 .home-content-tablecell h3 {
-  font-family: "montserrat-bold", sans-serif;
-  font-size: 2.2rem;
+  font-family: "Lato", sans-serif;
+  font-size: 3.8rem;
   color: black;
-  text-transform: uppercase;
-  letter-spacing: .3rem;
+  letter-spacing: .1rem;
   margin: 0 0 .9rem 0;
+  font-weight:normal;
+}
+.home-content-tablecell h4 {
+  color:#434343;
 }
 .home-content-tablecell h1 {
-  font-family: "montserrat-bold", serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
   font-size: 9rem;
   line-height: 1.133;
-  color: black;
+  color: #a90000;
 }
 #home-logo {
   height:7rem;
 }
-.home-content-tablecell .more {
-  margin: 4.8rem 0 0 0;
-}
 .home-content-tablecell .more .button {
-  border-color: #235789;
+  /*display: block;*/
+  border-color: #011538;
   color: white;
 }
 
@@ -1677,7 +1686,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
   .home-content-tablecell h3 {
-    font-size: 2.1rem;
+    font-size: 3.4rem;
   }
   .home-content-tablecell h1 {
     font-size: 7rem;
@@ -1688,13 +1697,21 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 @media only screen and (max-width: 1024px) {
   .home-content-tablecell h3 {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
   .home-content-tablecell h1 {
     font-size: 6rem;
   }
   #home-logo {
     height:4rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #home_smscreen {
+    display: table;
+  }
+  #home_lgscreen {
+    display: none;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1792,114 +1809,6 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 
-/* ===================================================================
- *  11. about - (_layout.scss)
- *
- * ------------------------------------------------------------------- */
-#about {
-  position: relative;
-  padding: 4.2rem 0 12rem;
-  background-color: #FFFFFF;
-  min-height: 696px;
-  text-align: center;
-}
-#about .about-wrap {
-  max-width: 850px;
-}
-#about span {
-  color: #07617d;
-}
-#about h3 {
-  font-family: "montserrat-bold", sans-serif;
-  font-size: 1.8rem;
-  line-height: 1.667;
-  color: #07617d;
-  text-transform: uppercase;
-  letter-spacing: .3rem;
-  position: relative;
-}
-#about h3::before {
-  display: block;
-  content: "";
-  width: 3px;
-  height: 9.6rem;
-  background-color: rgba(149, 149, 149, 0.7);
-  margin: 0 auto 2.4rem;
-}
-#about .lead {
-  font-family: "librebaskerville-bold", serif;
-  font-size: 4rem;
-  line-height: 1.8;
-  color: #2e383f;
-  margin-top: 6rem;
-}
-
-/* -------------------------------------------------------------------
- * responsive:
- * about
- * ------------------------------------------------------------------- */
-@media only screen and (max-width: 1024px) {
-  #about {
-    min-height: 636px;
-  }
-  #about .about-wrap {
-    max-width: 800px;
-  }
-  #about .lead {
-    font-size: 3.8rem;
-  }
-}
-@media only screen and (max-width: 900px) {
-  #about .about-wrap {
-    max-width: 720px;
-  }
-  #about .lead {
-    font-size: 3.6rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  #about h3 {
-    font-size: 1.7rem;
-  }
-  #about .about-wrap {
-    max-width: 600px;
-  }
-  #about .lead {
-    font-size: 3.1rem;
-  }
-}
-@media only screen and (max-width: 600px) {
-  #about {
-    min-height: auto;
-  }
-  #about .about-wrap {
-    max-width: 500px;
-  }
-  #about .lead {
-    margin-top: 4.8rem;
-    font-size: 2.8rem;
-  }
-}
-@media only screen and (max-width: 500px) {
-  #about h3 {
-    font-size: 1.5rem;
-  }
-  #about .lead {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (max-width: 400px) {
-  #about {
-    padding: 4.2rem 0 9.6rem;
-  }
-  #about .about-wrap {
-    max-width: 380px;
-  }
-  #about .lead {
-    font-size: 2.3rem;
-  }
-}
-
 
 /* ===================================================================
  *  12. services - (_layout.scss)
@@ -1916,7 +1825,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   position: relative;
   padding: 8rem 0 8rem;
 }
-#services .overlay {
+#services .overlay,
+#uses .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1924,59 +1834,102 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   height: 100%;
   background-color: rgba(255, 255, 255, 0.7);
 }
-#services .gradient-overlay {
+#services .gradient-overlay,
+#uses .gradient-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: .4;
+  opacity: .5;
+  z-index: -10;
  /* background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
   background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, transparent 100%); */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#00000000',GradientType=0 );
 }
-#services .section-intro h3 {
+#services .section-intro h3,
+#uses .section-intro h3 {
   color: rgba(242, 242, 242, 0.5);
 }
-#services .section-intro h1 {
-  color: black;
+#services .section-intro h1,
+#uses .section-intro h1 {
+  color: #a90000;
+  font-weight: lighter;
+  font-size: 4rem;
 }
-#services .section-intro .lead {
+#services .section-intro .lead,
+#uses .section-intro .lead {
   color: rgba(242, 242, 242, 0.4);
 }
-#services .services-content {
+
+#uses .service-item-left {
+   border-right: 1px solid red;
+}
+
+#services .services-content,
+#uses .services-content {
+  margin-bottom: 3rem;
   text-align: center;
   max-width: 1040px;
 }
-#services .services-list {
+#services .services-content p,
+#uses .services-content p {
+  margin-bottom: 8rem;
+  text-align: left;
+}
+#services .services-list,
+#uses .services-list {
   margin-top: 1.2rem;
   text-align: center;
 }
-#services .services-list .service-item {
-  margin-bottom: 3rem;
+#services .services-list .service-item,
+#uses .services-list .service-item {
   padding: 0 50px;
 }
-#services .services-list .service-item p {
-  color: black;
-  margin-bottom:8rem;
+#uses .services-list .service-item h1 {
+  font-weight: lighter;
+  font-style: italic;
+  margin: 6rem 0;
 }
-#services .services-list .icon {
+#services .services-list .service-item p,
+#uses .services-list .service-item p {
+  color: black;
+  margin-bottom: 8rem;
+}
+#uses .services-list .service-item .service-content:last-child p {
+  margin-bottom: 0;
+}
+#services .services-list .icon,
+#uses .services-list .icon {
   display: inline-block;
   margin-bottom: 1.5rem;
 }
-#services .services-list .icon i {
+#services .services-list .icon i,
+#uses .services-list .icon i {
   font-size: 5.4rem;
   color: #f9a828;
 }
-#services .services-list .h05 {
+#services .services-list .h05,
+.services-list .h05 {
   font-size: 1.7rem;
   line-height: 1.765;
-  color: black;
+  color: #a90000;
 }
-#services-listing .service-item img
-{
+#uses .services-list .h05 {
+  font-size: 2.4rem;
+  font-weight: lighter;
+  line-height: 1.765;
+  color: #a90000;
+}
+
+#services-listing .service-item img {
   width:50%;
+}
+
+#services li {
+  color: #18003D;
+  font
 }
 
 /* -------------------------------------------------------------------
@@ -1991,6 +1944,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 @media only screen and (max-width: 900px) {
   #services .services-list .service-item {
     padding: 0 30px;
+  }
+  #uses .services-list .service-item:first-child .service-content:last-child p {
+    margin-bottom: 8rem;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -2459,7 +2415,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   padding: 4.8rem 0 4.8rem;
 }
 #clients .client-lists .owl-item {
-  opacity: .6;
+  opacity: .9;
   -moz-transition: all 0.6s ease-in-out;
   -o-transition: all 0.6s ease-in-out;
   -webkit-transition: all 0.6s ease-in-out;
@@ -2523,6 +2479,11 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #clients .owl-carousel .owl-dots .owl-dot:hover span {
   background-color: #000000;
 }
+#clients h2 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: lighter;
+}
 
 
 /* ===================================================================
@@ -2546,11 +2507,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: .75;
+  opacity: .9;
   background-color: white;
 }
 #contact .section-intro h1 {
-  color: black;
+  color: #a90000;
+  font-weight: lighter;
 }
 #contact .section-intro h3 {
   color: black;
@@ -2580,7 +2542,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   margin-bottom: 4.2rem;
 }
 #contact .colorize {
-  color: #cc0000;
+  color: #a90000;
 }
 
 /* contact form */
@@ -2599,13 +2561,13 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   clear: both;
 }
 #contact form .form-field label {
-  font-family: "montserrat-bold", sans-serif;
-  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  font-size: 1.6rem;
   line-height: 1.4;
   position: absolute;
   bottom: 1.5rem;
   right: 0;
-  text-transform: uppercase;
   letter-spacing: .05rem;
   padding: .6rem 2rem .6rem 2rem;
   margin: 0;
@@ -2676,15 +2638,15 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   line-height: 6rem;
   padding: 0 3rem;
   width: 100%;
-  background: #235789;
+  background: #011538;
   color:white;
   margin-top: .6rem;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
-  background: #235789;
+  background: #011538;
 }
 
-#message-warning, #message-success {
+.message-warning, .message-success {
   display: none;
   background: #000000;
   padding: 3rem;
@@ -2692,21 +2654,21 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   width: 100%;
 }
 
-#message-warning {
+.message-warning {
   color: #D32B2E;
 }
 
-#message-success {
+.message-success {
   color: #f9a828;
 }
 
-#message-warning i,
-#message-success i {
+.message-warning i,
+.message-success i {
   margin-right: 10px;
 }
 
 /* form loader */
-#submit-loader {
+.submit-loader {
   display: none;
   position: relative;
   left: 0;
@@ -2715,7 +2677,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   text-align: center;
   margin-bottom: 4.2rem;
 }
-#submit-loader .text-loader {
+.submit-loader .text-loader {
   display: none;
   font-family: "montserrat-bold", sans-serif;
   font-size: 1.4rem;
@@ -2724,10 +2686,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   text-transform: uppercase;
 }
 
-.oldie #submit-loader .s-loader {
+.oldie .submit-loader .s-loader {
   display: none;
 }
-.oldie #submit-loader .text-loader {
+.oldie .submit-loader .text-loader {
   display: block;
 }
 
@@ -2802,7 +2764,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     max-width: 600px;
     text-align: center;
   }
-
+  #uses .service-item-left {
+   border: none;
+  }
   .contact-info {
     width: 100%;
     margin-top: 3.6rem;
@@ -2811,6 +2775,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 @media only screen and (max-width: 600px) {
   .contact-content {
     max-width: 480px;
+  }
+  #uses .service-item-left {
+   border: none;
   }
 }
 @media only screen and (max-width: 400px) {
