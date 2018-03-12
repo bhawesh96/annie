@@ -1528,11 +1528,15 @@ header .row {
   opacity: .2;
   background-color: white;
 }
-#home-product {
+/* #home-product {
   height:248px;
+} */
+#home-product {
+  max-height: 20%;
+  width: 44%;
 }
 #home_smscreen {
-  display: none;
+  
 }
 #home-product2 {
   width: 80%;
@@ -1741,6 +1745,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     font-size: 1.2rem;
     top: 24px;
     right: 10px;
+  }
+  #home-product {
+    max-height: none;
+    width: auto;
   }
 }
 
