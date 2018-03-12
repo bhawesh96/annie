@@ -1573,12 +1573,13 @@ header .row {
 .home-content-tablecell h1 {
   font-family: "Lato", sans-serif;
   font-weight: 10;
-  font-size: 9rem;
+  font-size: 7rem;
   line-height: 1.133;
   color: #a90000;
 }
 #home-logo {
-  height:7rem;
+  margin-top: -30px;
+  height:5rem;
 }
 .home-content-tablecell .more .button {
   /*display: block;*/
@@ -1863,8 +1864,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #services .section-intro h1,
 #uses .section-intro h1 {
+  text-transform: uppercase;
   color: #a90000;
-  font-weight: lighter;
+  font-weight: bold;
   font-size: 4rem;
 }
 #services .section-intro .lead,
@@ -1932,7 +1934,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #services-listing .service-item img {
-  width:100%;
+  width:50%;
 }
 
 #services-listing .homegirl img {
@@ -2408,6 +2410,11 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   #testimonial-slider p {
     font-size: 2.2rem;
   }
+
+  select {
+    width: 100%;
+    margin-bottom: 3.6rem;
+  }
 }
 @media only screen and (max-width: 500px) {
   #testimonials h2 {
@@ -2656,13 +2663,20 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   height: 6rem;
   line-height: 6rem;
   padding: 0 3rem;
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
   background: #011538;
   color:white;
   margin-top: .6rem;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
   background: #011538;
+}
+
+select {
+  width: 50%;
+  margin: 0px auto;
+  margin-bottom: 3.6rem;
 }
 
 .message-warning, .message-success {
@@ -2769,6 +2783,11 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     transform: scale(1);
   }
 }
+
+.mobile-show {
+  display: none;
+}
+
 /* -------------------------------------------------------------------
  * responsive:
  * contact
@@ -2790,6 +2809,11 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     width: 100%;
     margin-top: 3.6rem;
   }
+  select {
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 3.6rem;
+  }
 }
 @media only screen and (max-width: 600px) {
   .contact-content {
@@ -2797,6 +2821,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
   #uses .service-item-left {
    border: none;
+  }
+  .mobile-hide {
+    display: none;
+  }
+  .mobile-show {
+    display: block;
   }
 }
 @media only screen and (max-width: 400px) {
