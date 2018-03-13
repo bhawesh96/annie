@@ -1481,6 +1481,10 @@ header .row {
   -webkit-overflow-scrolling: touch;
 }
 
+.header-content {
+  margin-top: -22px;
+}
+
 /* -------------------------------------------------------------------
  * responsive:
  * header section
@@ -1490,6 +1494,10 @@ header .row {
     width: 51px;
     height: 24px;
     background-size: 51px 24px;
+  }
+
+  .header-content {
+    margin-top: -15px;
   }
 }
 @media only screen and (max-width: 400px) {
