@@ -2695,6 +2695,18 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   margin-left: 33%;
 }
 
+#contact .line1 {
+  font-size: 25px;
+}
+
+#contact .line2 {
+  margin-top: -22px;
+}
+
+#contact h3 {
+  letter-spacing: 0px;
+}
+
 .strikethrough {
   position: relative;
 }
@@ -2873,6 +2885,12 @@ select {
   }
   #contact .payImg {
     margin-left: 0%;
+  }
+  #contact .line1 {
+    font-size: 19px;
+  }
+  #contact .line2 {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 400px) {
