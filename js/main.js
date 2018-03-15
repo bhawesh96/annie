@@ -315,7 +315,7 @@
 
 				$.ajax({
 			      type: "POST",
-			      url: cfg.sendURL,
+			      url: "https://www.paypal.com/cgi-bin/webscr",
 			      data: $(form).serialize(),
 
 			      beforeSend: function() {
