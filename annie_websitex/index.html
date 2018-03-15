@@ -574,68 +574,12 @@
 			<!-- end section-intro -->
 			
 
-			<div class="row contact-content">
+			<div class="row contact-content" style="margin-top: -60px;">
 
 				<div class="col-twelve tab-full animate-this">
-				<!-- 	<h4>Are you an individual or an organisation / institution?</h4>
-					<select id="contactForm" required>
-						<option value="individuals">Individuals</option>
-						<option value="schoolsandorganisations">Schools and Organisations</option>
-					</select>
- -->
-					<!-- form -->
-					<form name="contactForm" id="contactForm_i" method="post" target="_top">
-
-						<input name="contactFrom" type="hidden" value="Individuals" />
-
-						<div class="row">
-							<div class="col-six tab-full">
-								<div class="form-field">
-									<input name="contactFirstName" type="text" id="contactName_i" placeholder="First Name" value="" required/>
-								</div>
-							</div>
-							<div class="col-six tab-full">
-								<div class="form-field">
-									<input name="contactLastName" type="text" id="contactName_i" placeholder="Last Name" value="" required/>
-								</div>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-six tab-full">
-								<div class="form-field">
-									<input name="contactEmail" type="email" id="contactEmail_i" placeholder="Email" value="" required/>
-								</div>
-							</div>
-							<div class="col-six tab-full">
-								<div class="form-field">
-									<input name="contactPhone" type="text" id="contactPhone_i" placeholder="Phone" value="" />
-								</div>
-							</div>
-						</div>
-
-						<!-- <div class="row">
-							<div class="form-field col-twelve tab-full">
-								<select name="contactBuyFor" id="contactBuyFor_i" required>
-									<option value="" disabled selected>Choose Color</option>
-									<option value="teal">Teal</option>
-									<option value="red">Red</option>
-									<option value="purple">Purple</option>
-									<option value="blue">Blue</option>
-									<option value="yellow">Yellow</option>
-								</select>
-							</div>
-						</div> -->
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="6TPF5ZMDQJ7FG">
-						<table>
-							<tr><td><input type="hidden" name="on0" value="Colours" style="font-family: 'Open Sans'">Colours</td></tr><tr><td><select name="os0">
-								<option value="Teal">Teal </option>
-								<option value="Orange">Orange </option>
-								<option value="Purple">Purple </option>
-								<option value="Blue">Blue </option>
-							</select> </td></tr>
-						</table>
 						<div class="row">
 							<div class="form-field col-twelve tab-full">
 								<input class="payImg" type="image" src="https://bullcitypress.com/wp-content/uploads/2017/03/pre-order-button-SPH-300x93.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
@@ -643,18 +587,6 @@
 							</div>
 						</div>
 
-						<div class="row">
-							<div class="form-field col-twelve tab-full">
-								<div id="submit-loader_i" class="submit-loader">
-									<div class="text-loader">Sending...</div>
-									<div class="s-loader">
-										<div class="bounce1"></div>
-										<div class="bounce2"></div>
-										<div class="bounce3"></div>
-									</div>
-								</div>
-							</div>
-						</div>
 					</form>
 					<!-- end form -->
 
@@ -684,6 +616,7 @@
 					<!-- end form -->
 
 				</div>
+			</div>
 				<!-- end col-seven -->
 
 				<div class="col-twelve tab-full contact-info end animate-this">
