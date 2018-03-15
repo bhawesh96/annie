@@ -61,8 +61,8 @@ html, body {
 body {
   background: white;
   /*font-family: "librebaskerville-regular", serif;*/
-  font-family: 'Maven Pro', sans-serif;
-  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
   font-size: 1.6rem;
   line-height: 3rem;
   color: #353535;
@@ -93,7 +93,7 @@ a:hover, a:focus {
  * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6,
 .h01, .h02, .h03, .h04, .h05, .h06 {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #151515;
   font-style: normal;
   text-rendering: optimizeLegibility;
@@ -112,6 +112,7 @@ h1, .h01 {
   font-size: 3.1rem;
   line-height: 1.35;
   letter-spacing: -.1rem;
+  font-weight: 800;
 }
 @media only screen and (max-width: 600px) {
   h1, .h01 {
@@ -139,6 +140,7 @@ h5, .h05 {
   font-size: 1.4rem;
   line-height: 1.7;
   letter-spacing: .2rem;
+  font-weight: 700;
 }
 
 h6, .h06 {
@@ -169,7 +171,7 @@ em, i, strong, b {
   font-size: 1.6rem;
   line-height: 3rem;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
 }
 
 em, i {
@@ -1164,12 +1166,12 @@ input::-moz-focus-inner {
   margin-bottom: 1.5rem;
 }
 .section-intro h1 {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 4.8rem;
   line-height: 1.375;
 }
 .section-intro h3 {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.8 rem;
   line-height: 1.667;
   color: rgba(242, 242, 242, 0.5);
@@ -1568,18 +1570,18 @@ header .row {
   padding-top: 6rem;
 }
 .home-content-tablecell h3 {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 3.8rem;
   color: black;
   letter-spacing: .1rem;
   margin: 0 0 .9rem 0;
-  font-weight:normal;
+  font-weight:700;
 }
 .home-content-tablecell h4 {
   color:#434343;
 }
 .home-content-tablecell h1 {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 10;
   font-size: 7rem;
   line-height: 1.133;
@@ -1874,7 +1876,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #uses .section-intro h1 {
   text-transform: uppercase;
   color: #a90000;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 4rem;
 }
 #services .section-intro .lead,
@@ -1906,7 +1908,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   padding: 0 50px;
 }
 #uses .services-list .service-item h1 {
-  font-weight: lighter;
+  font-weight: 600;
   font-style: italic;
   margin: 6rem 0;
 }
@@ -1936,7 +1938,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #uses .services-list .h05 {
   font-size: 2.4rem;
-  font-weight: lighter;
+  font-weight: 700;
   line-height: 1.765;
   color: #a90000;
 }
@@ -2515,8 +2517,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #clients h2 {
   text-align: center;
-  font-family: "Lato", sans-serif;
-  font-weight: lighter;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
 
 
@@ -2546,7 +2548,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #contact .section-intro h1 {
   color: #a90000;
-  font-weight: lighter;
+  font-weight: 800;
 }
 #contact .section-intro h3 {
   color: black;
@@ -2556,7 +2558,11 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #contact .services-content {
-  font-weight: bold;
+  font-weight: 700;
+}
+
+#contact .font-light {
+  font-weight: 600;
 }
 
 .contact-content {
@@ -2599,8 +2605,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   clear: both;
 }
 #contact form .form-field label {
-  font-family: "Lato", sans-serif;
-  font-weight: bolder;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
   font-size: 1.6rem;
   line-height: 1.4;
   position: absolute;
@@ -3091,4 +3097,14 @@ footer h4.h05::after {
 
 #message-success_i{
   text-align: center;
+}
+
+.font-light {
+  font-weight: 600;
+}
+.font-semibold {
+  font-weight: 700;
+}
+.font-extrabold {
+  font-weight: 800;
 }
