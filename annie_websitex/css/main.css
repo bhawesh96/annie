@@ -2691,6 +2691,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background: #011538;
 }
 
+#contact .payImg {
+  margin-left: 33%;
+}
+
 .strikethrough {
   position: relative;
 }
@@ -2702,7 +2706,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   right: 0;
   border-top: 1px solid;
   border-color: inherit;
-  color: red;
+  color: #a90000;
   width: 110%;
 
   -webkit-transform:rotate(-25deg);
@@ -2866,6 +2870,9 @@ select {
   }
   .mobile-show {
     display: block;
+  }
+  #contact .payImg {
+    margin-left: 0%;
   }
 }
 @media only screen and (max-width: 400px) {
