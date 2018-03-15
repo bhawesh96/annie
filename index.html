@@ -540,9 +540,9 @@
 					<p class="services-content font-semibold" style="font-size: 25px">Annie device + Free 1 Annual Subscription</p>
 					<p class="services-content font-light" style="margin-top: -22px">Subscription is for premium content &amp; software
 					</p>
-				<p class="services-content font-light" style=" margin-top: -17px;"><span class="font-semibold">Price: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="strikethrough">£699/-</span> + <span class="strikethrough">£99</span> for 1 year</p>
+				<p class="services-content font-light" style=" margin-top: -17px;"><span class="font-semibold">Price: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="strikethrough">£699/-</span> + <span class="strikethrough">£99</span> for 1 year</p>
 
-				<p class="services-content font-light" style=" margin-top: -25px;"><span class="font-semibold">Early-bird:</span><span>£599/-</span> + <span>£0 &nbsp;</span> for 1 year</p>
+				<p class="services-content font-light" style=" margin-top: -25px;"><span class="font-semibold">Early-bird: </span><span>£599/-</span> + <span>£0 &nbsp;</span> for 1 year</p>
 				</div>
 
 				<h3 class="services-content">Limited : <span style="color: #a90000;">Only 100 Units</span></h3>
@@ -582,7 +582,7 @@
 					</select>
  -->
 					<!-- form -->
-					<form name="contactForm" id="contactForm_i" method="post">
+					<form name="contactForm" id="contactForm_i" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 
 						<input name="contactFrom" type="hidden" value="Individuals" />
 
@@ -612,7 +612,7 @@
 							</div>
 						</div>
 
-						<div class="row">
+						<!-- <div class="row">
 							<div class="form-field col-twelve tab-full">
 								<select name="contactBuyFor" id="contactBuyFor_i" required>
 									<option value="" disabled selected>Choose Color</option>
@@ -623,11 +623,26 @@
 									<option value="yellow">Yellow</option>
 								</select>
 							</div>
-						</div>
+						</div> -->
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="6TPF5ZMDQJ7FG">
+						<table>
+							<tr><td><input type="hidden" name="on0" value="Colours" style="font-family: 'Open Sans'">Colours</td></tr><tr><td><select name="os0">
+								<option value="Teal">Teal </option>
+								<option value="Orange">Orange </option>
+								<option value="Purple">Purple </option>
+								<option value="Blue">Blue </option>
+							</select> </td></tr>
+						</table>
 						<div class="row">
 							<div class="form-field col-twelve tab-full">
-								<button class="submitform" type="submit" id="submit-form">Pre-order</button>
+								<input class="payImg" type="image" src="https://bullcitypress.com/wp-content/uploads/2017/03/pre-order-button-SPH-300x93.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+								<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+							</div>
+						</div>
 
+						<div class="row">
+							<div class="form-field col-twelve tab-full">
 								<div id="submit-loader_i" class="submit-loader">
 									<div class="text-loader">Sending...</div>
 									<div class="s-loader">
@@ -638,8 +653,6 @@
 								</div>
 							</div>
 						</div>
-
-
 					</form>
 					<!-- end form -->
 
